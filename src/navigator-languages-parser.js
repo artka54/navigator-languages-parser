@@ -5,8 +5,13 @@ class NavigatorLanguagesParser {
 	 * @return {array}
 	 */
 	static _getUsersPreferredLanguages() {
-		console.log(navigator.languages)
-		return navigator.languages
+
+		if (navigator.languages !== undefined) {
+			return navigator.languages
+		} else {
+			return [navigator.language]
+		}
+
 	}
 
 	/**
