@@ -1,5 +1,7 @@
 const NavigatorLanguagesParser = require("./navigator-languages-parser.js")
 
 console.log(
-	NavigatorLanguagesParser.parseLanguages(['en-US', 'en', 'ru', 'en-USz'], 'en')
+	NavigatorLanguagesParser.parseLanguages(['en', 'en-US', 'ru', 'en-USz'], 'en')
 	)
+
+console.log(navigator)

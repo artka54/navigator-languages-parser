@@ -18,7 +18,7 @@ class NavigatorLanguagesParser {
 
 		const userPref = this._getUsersPreferredLanguages()
 
-		const match = navigator.languages.find( lang => acceptedLangs.includes(lang) )
+		const match = userPref.find( lang => acceptedLangs.includes(lang) )
 
 		if (match == undefined && defaultLang != false ) {
 			return defaultLang

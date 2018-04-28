@@ -4,7 +4,7 @@
   "description": "Parse user's preferred languages returned from navigator.languages array.",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Arturs \"artka54\" Kalnins",
   "license": "ISC",
