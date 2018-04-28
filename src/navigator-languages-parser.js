@@ -10,7 +10,7 @@ class NavigatorLanguagesParser {
 			return navigator.languages
 		} else {
 			return [navigator.language]
-		}
+		} // create else for final fallback, and also create a test for it
 
 	}
 

@@ -23,7 +23,7 @@ describe("Matching locales to user's preffered locales", () => {
 	});
 
 	test("when locale is not in the user's preferred list but default locale is indicated then return default locale", () => {
-	  expect(NavigatorLanguagesParser.parseLanguages(['de'], 'en')).toEqual('en')
+	  expect(NavigatorLanguagesParser.parseLanguages(['de', 'es'], 'de')).toEqual('de')
 	});
 
 	test("when asked locale is not in the user's preferred list and no default locale is indicated it should return undefined", () => {
@@ -49,7 +49,7 @@ describe("Matching locales to user's preffered locales. Using fallback -> naviga
 	});
 
 	test("when locale is not in the user's preferred list but default locale is indicated then return default locale", () => {
-	  expect(NavigatorLanguagesParser.parseLanguages(['de'], 'en')).toEqual('en')
+	  expect(NavigatorLanguagesParser.parseLanguages(['de', 'en'], 'de')).toEqual('de')
 	});
 
 	test("when asked locale is not in the user's preferred list and no default locale is indicated it should return undefined", () => {
