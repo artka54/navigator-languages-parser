@@ -12,7 +12,7 @@ class NavigatorLanguagesParser {
 	/**
 	 * @param  {array} acceptedLangs - pass languages that you accept
 	 * @param {array} defaultLang - indicate default language to fallback (optional)
-	 * @return {boolean}
+	 * @return {string} - suitable locale (the one that matches the user preferred or default)
 	 */
 	static parseLanguages(acceptedLangs, defaultLang = false) {
 
