@@ -23,7 +23,7 @@ NavigatorLanguagesParser.parseLanguages(['en', 'ko', 'de'], 'en')
 
 #### NavigatorLanguagesParser.parseLanguages(Array acceptedLangs, String defaultLang [optional])
 
-We indicate the languages app can offer to check against the languages set as user's preferred. We also set a default fallback language to 'en' in case user has not preferred any of our apps languages but we still need to decide on one language.
+We indicate the languages that we want to be checked against the languages set as user's preferred. We also set a default fallback language to 'en' in case user has not preferred any of the languages we check but we still need to decide on one language.
 
 ```javascript
 const match = NavigatorLanguagesParser.parseLanguages(['en', 'ko', 'de'], 'en')
@@ -38,12 +38,14 @@ console.log(match)
 ```
 
 
-
+We indicate languages to be checked against user's preferred without indicating a default one.
+You can use this if you do not need default language or you want to implement your own logic when no language is matched.
 ```javascript
 const match = NavigatorLanguagesParser.parseLanguages(['en', 'ko', 'es'])
 
-// output if user's navigator.languages in browser does not contain any of our accepted languages as a preferred language
-undefined // because thereis no default language indicated
+console.log(match)
+
+undefined // because there is no default language indicated
 
 
 ```

@@ -57,3 +57,6 @@ describe("Matching locales to user's preffered locales. Using fallback -> naviga
 	});
 
 });
+
+
+// describe if neither navigator.languages or navigator.language does not work
