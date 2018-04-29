@@ -8,9 +8,11 @@ class NavigatorLanguagesParser {
 
 		if (navigator.languages !== undefined) {
 			return navigator.languages
-		} else {
+		} else if (navigator.language !== undefined) {
 			return [navigator.language]
-		} // create else for final fallback, and also create a test for it
+		} else {
+			return undefined
+		}// create else for final fallback, and also create a test for it
 
 	}
 
@@ -23,7 +25,7 @@ class NavigatorLanguagesParser {
 
 		const userPref = this._getUsersPreferredLanguages()
 
-		const match = userPref.find( lang => acceptedLangs.includes(lang) )
+		const match = userPref ? userPref.find( lang => acceptedLangs.includes(lang) ) : undefined
 
 		if (match == undefined && defaultLang != false ) {
 			return defaultLang
