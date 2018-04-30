@@ -1,6 +1,6 @@
 {
   "name": "navigator-languages-parser",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Parses the navigator.languages (user's preffered languages) array against the accepted languages (languages defined in app) and returns the match.",
   "main": "./src/index.js",
   "scripts": {
