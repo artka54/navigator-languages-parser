@@ -22,8 +22,6 @@ npm install navigator-languages-parser
 ```javascript
 import NavigatorLanguagesParser from "navigator-languages-parser"
 
-const NavigatorLanguagesParser = require("./navigator-languages-parser.js")
-
 NavigatorLanguagesParser.parseLanguages(['en', 'ko', 'de'], 'en')
 ```
 
