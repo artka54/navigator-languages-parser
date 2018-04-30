@@ -12,6 +12,13 @@ npm install navigator-languages-parser
 
 ### Usage
 
+**This package is inteded to work on client side as it parses the languages presented in the 'navigator' object that is supplied by the browser. This package won't work on the server side.**
+
+1. Import or require the script in your App (e.g react or vue app)
+2. Make custom logic
+3. Bundle the javascript e.g with webpack
+4. Include it in html so this module faces client's browser and enjoy
+
 ```javascript
 const NavigatorLanguagesParser = require("./navigator-languages-parser.js")
 
