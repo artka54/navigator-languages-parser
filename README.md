@@ -1,5 +1,7 @@
 # navigator-languages-parser
 
+[![Build Status](https://travis-ci.org/artka54/navigator-languages-parser.svg?branch=master)](https://travis-ci.org/artka54/navigator-languages-parser)
+
 Parses the navigator.languages (user's preffered languages) array against the accepted languages (languages defined in app) and returns the match.
 
 ### Installation
