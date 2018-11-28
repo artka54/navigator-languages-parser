@@ -1,4 +1,4 @@
-const NavigatorLanguagesParser = require( "../dist/bundle.js");
+const NavigatorLanguagesParser = require( "../src/navigator-languages-parser.js");
 
 const setUserPreferredlanguages = (preferredlanguages) => {
 	Object.defineProperty(window.navigator, 'languages', {value: preferredlanguages, configurable: true})

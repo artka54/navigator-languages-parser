@@ -1,4 +1,4 @@
-export default class NavigatorLanguagesParser {
+class NavigatorLanguagesParser {
 
 	/**
 	 * Get user's preferred languages
@@ -36,4 +36,5 @@ export default class NavigatorLanguagesParser {
 
 }
 
-console.log('test');
+module.exports = NavigatorLanguagesParser
+
