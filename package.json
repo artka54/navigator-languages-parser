@@ -1,6 +1,6 @@
 {
   "name": "navigator-languages-parser",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "repository": "github:artka54/navigator-languages-parser",
   "description": "Parses the navigator.languages (user's preffered languages) array against the accepted languages (languages defined in app) and returns the match.",
   "main": "./dist/bundle.js",
