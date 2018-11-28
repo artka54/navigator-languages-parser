@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: './src/navigator-languages-parser.js',
   output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'bundle_for_test'),
     filename: 'bundle.js'
   },
      module: {
