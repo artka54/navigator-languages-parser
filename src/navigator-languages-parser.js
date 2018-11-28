@@ -7,11 +7,11 @@ export default class NavigatorLanguagesParser {
     _getUsersPreferredLanguages() {
 
 		if (navigator.languages !== undefined) {
-			return navigator.languages
+			return navigator.languages;
 		} else if (navigator.language !== undefined) {
-			return [navigator.language]
+			return [navigator.language];
 		} else {
-			return undefined
+			return undefined;
 		}// create else for final fallback, and also create a test for it
 
 	}
@@ -23,15 +23,15 @@ export default class NavigatorLanguagesParser {
 	 */
     parseLanguages(acceptedLangs, defaultLang = false) {
 
-		const userPref = this._getUsersPreferredLanguages()
+		const userPref = this._getUsersPreferredLanguages();
 
-		const match = userPref ? userPref.find( lang => acceptedLangs.includes(lang) ) : undefined
+		const match = userPref ? userPref.find( lang => acceptedLangs.includes(lang) ) : undefined;
 
 		if (match == undefined && defaultLang != false ) {
-			return defaultLang
+			return defaultLang;
 		}
 
-		return match
+		return match;
 	}
 
 }
