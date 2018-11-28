@@ -4,7 +4,7 @@ export default class NavigatorLanguagesParser {
 	 * Get user's preferred languages
 	 * @return {array}
 	 */
-    _getUsersPreferredLanguages() {
+    static _getUsersPreferredLanguages() {
 
 		if (navigator.languages !== undefined) {
 			return navigator.languages;
@@ -21,7 +21,7 @@ export default class NavigatorLanguagesParser {
 	 * @param {array} defaultLang - indicate default language to fallback (optional)
 	 * @return {string} - suitable locale (the one that matches the user preferred or default)
 	 */
-    parseLanguages(acceptedLangs, defaultLang = false) {
+    static parseLanguages(acceptedLangs, defaultLang = false) {
 
 		const userPref = this._getUsersPreferredLanguages();
 
@@ -35,3 +35,5 @@ export default class NavigatorLanguagesParser {
 	}
 
 }
+
+console.log('test');
