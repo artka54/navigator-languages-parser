@@ -37,5 +37,5 @@ class NavigatorLanguagesParser {
 }
 
 //module.exports = NavigatorLanguagesParser
-export default NavigatorLanguagesParser
+export default NavigatorLanguagesParser;
 
