@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const NavigatorLanguagesParser = require( "../src/navigator-languages-parser.js");
 
 const setUserPreferredlanguages = (preferredlanguages) => {

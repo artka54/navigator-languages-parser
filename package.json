@@ -8,18 +8,12 @@
     "testURL": "http://localhost/"
   },
   "scripts": {
-    "test": "jest",
-    "prepublishOnly": "webpack"
+    "test": "jest"
   },
   "author": "Arturs \"artka54\" Kalnins",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^24.3.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "jest": "^27.5.1"
   },
   "dependencies": {}
 }
